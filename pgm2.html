@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    
+    <link rel="stylesheet" href="pgm2.css"/>
+    <title>program2: Build Survey From</title>
+</head>
+<body>
+<h1 id="title">Survey From</h1>
+<p id="description"><strong>Fill this form</strong></p>
+<from id="survey-form">
+    <div>
+        <br><label for="name" id="name-label">Name:</label><br>
+     <input class="input-nj" type="text" name="name" id="name" required placeholder=" Your Full name">
+</div>
+<div><br>
+    <label for="email" id="email-label">Email:</label><br>
+<input class="input-nj" type="email" name="email" id="email" required placeholder="Your Email ID">
+</div>
+<div><br>
+    <label for="number" id="number-label">Age:</label><br>
+<input class="input-nj" type="number" name="age" id="number" max="40" min="19" placeholder="Your Age">
+</div>
+<div><br>
+<label for="dropdown">Which one is your occpuation?</label><br>
+<select class="select-nj" name="occpuation" id="dropdown">
+    <option value="full-time-job">Full Time Job</option>
+    <option value="part-time-job">Part Time Job</option>
+    <option value="Student">Student</option>
+    <option value="unemployment">Unemployment</option>
+    <option value="teacher">Teacher</option>
+</select>
+
+</div>
+<div><br>
+<div> How likely are you to suggest this website?</div>
+<ul>
+    <label class="list-items"><input class="input-nj input-radio" type="radio"name="like" value="1" id="radio-1"><label for="radio-1">Extermely likely</label></label>
+  <br>  <label class="list-items"><input class="input-nj input-radio" type="radio"name="like" value="1" id="radio-1"><label for="radio-1">Very likely</label></label>
+   <br> <label class="list-items"><input class="input-nj input-radio" type="radio"name="like" value="1" id="radio-1"><label for="radio-1">likely</label></label>
+   <br> <label class="list-items"><input class="input-nj input-radio" type="radio"name="like" value="1" id="radio-1"><label for="radio-1">Unlikely</label></label>
+</ul>
+</div>
+<div>
+    <div>what imporvement would you like?</div>
+<ul>
+    <label class="list-items" for="checkbox-1"><input class="input-nj input-checkbox" input="checkbox" type="checkbox" name="impovement" value="HTML5" id="checkbox-1">More HTML5 Task</label>
+  <br> <label class="list-items" for="checkbox-2"><input class="input-nj input-checkbox" input="checkbox" type="checkbox" name="impovement" value="CSS" id="checkbox-2">More CSS Task</label>
+    <br><label class="list-items" for="checkbox-3"><input class="input-nj input-checkbox" input="checkbox" type="checkbox" name="impovement" value="JS" id="checkbox-3">More JS Task</label>
+</ul>
+</div>
+<div><br>
+    <label for="more improvements">List all imporvenment you want in our website:</label>
+   <br> <textarea class="textarea" name="imporvement-list" id="more-imporvement"></textarea>
+</div>
+<button class="button-nj" type="submit" id="submit">submit</button>
+
+</from>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
